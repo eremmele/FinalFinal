@@ -285,6 +285,12 @@ html, body {
   animation: 10s linear infinite slide1;
 }
 
+.container1:hover,.container2:hover,.container3:hover {
+ -moz-animation-play-state: paused;
+ -webkit-animation-play-state: paused;
+ animation-play-state: paused;
+ }
+
 .child1 {
   overflow: hidden;
   position: relative;
