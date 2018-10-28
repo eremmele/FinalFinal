@@ -1,0 +1,228 @@
+/********************* RESETS **********************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/********************* END RESETS **********************/
+
+/********************* BEGIN MAIN CSS **********************/
+
+@import url('https://fonts.googleapis.com/css?family=Asul:400,700');
+
+html, body {
+  background-color: #8000FF;
+  font-family: 'Asul', sans-serif;
+  color: #000000;
+  width: 100vw;
+  height: 100vh;
+}
+
+.background1 {
+  background-image: url("content/background_type.svg");
+  background-size: 100%;
+  height: 100vh;
+  width: 100vw;
+  text-align:center;
+  float:center;
+  vertical-align: middle;
+}
+
+.background2 {
+  background-image: linear-gradient(45deg, rgba(128,0,255,0), rgba(128,0,255,1));
+  height: 100vh;
+  width: 100vw;
+  text-align:center;
+  float:center;
+  vertical-align: middle;
+}
+
+.background3 {
+  text-align:center;
+  float:center;
+  vertical-align: middle;
+}
+
+.background3-octopus {
+  width: 33.1%;
+}
+
+.octopus {
+  width: 23.75%;
+  mix-blend-mode: difference;
+  margin-top: 12.5%;
+}
+
+.logo-hero {
+  width: 100vw;
+  float: center;
+  text-align: center;
+  vertical-align: middle;
+  margin: 17.5% 0 0 0.5%;
+  z-index: 1;
+  position: absolute;
+}
+
+.design {
+  float:center;
+  vertical-align:middle;
+  margin: 30.75% 0 0 63.75%;
+  z-index: 2;
+  position: absolute;
+  width: 15%;
+  color: #000;
+  text-align: center;
+  font-family: futura, san-serif;
+  font-weight: bold;
+}
+
+.circle {
+  position: relative;
+  display: block;
+  margin: 0;
+  background-color: transparent;
+  text-align: center;
+  font-family: futura, san-serif;
+  font-weight: bold;
+  font-size: 3px;
+
+}
+
+.circle:after {
+  display: block;
+  padding-bottom: 27%;
+  width: 27%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #FFB800;
+  content: "";
+}
+
+.circle__inner {
+  position: absolute;
+  vertical-align: middle;
+  top: 35%;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.circle__wrapper {
+  display: table;
+  width: 27%;
+  height: 27%;
+}
+
+.circle__content {
+  display: table-cell;
+  vertical-align: middle;
+  float: center;
+}
+
+@media (min-width: 480px) {
+  .circle__content {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 768px) {
+  .circle__content {
+    font-size: 4em;
+  }
+}
+
+/********************* begin marquee **********************/
+.wrapper {
+    -ms-transform: rotate(270deg); /* IE 9 */
+  -webkit-transform: rotate(270deg); /* Safari */
+  transform: rotate(270deg);
+  position: absolute;
+  z-index: 0;
+  float: left;
+  margin: 5% 0 0 0;
+  width: 5%;
+}
+
+.marquee {
+  height: 5vw;
+  width: 100vh;
+  margin: 0;
+
+  overflow: hidden;
+  position: relative;
+
+  font-family: asul, san-serif;
+  font-weight: regular;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+
+  border: 2px solid #000;
+  vertical-align:middle;
+}
+
+.marquee div {
+  display: block;
+  width: 300%;
+  height: 5vw;
+
+  position: absolute;
+  overflow: hidden;
+
+  animation: marquee 5s linear infinite;
+}
+
+.marquee span {
+  float: left;
+  width: 50%;
+  vertical-align:middle;
+  float:center;
+  margin-top: 1.2%;
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+/********************* end marquee **********************/
