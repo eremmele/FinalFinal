@@ -173,9 +173,9 @@ html, body {
 }
 
 /********************* begin marquee **********************/
-.wrapper {
-    -ms-transform: rotate(270deg); /* IE 9 */
-  -webkit-transform: rotate(270deg); /* Safari */
+/*.wrapper {
+    -ms-transform: rotate(270deg); /* IE 9
+  -webkit-transform: rotate(270deg); /* Safari
   transform: rotate(270deg);
   position: absolute;
   z-index: 0;
@@ -224,5 +224,126 @@ html, body {
 @keyframes marquee {
   0% { left: 0; }
   100% { left: -100%; }
+}
+/********************* end marquee **********************/
+
+/********************* begin marquee **********************/
+@keyframes slide1 {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -100%;
+  }
+}
+
+@keyframes slide2 {
+  from {
+    background-position-x: -100%;
+  }
+  to {
+    background-position-x: 0;
+  }
+}
+
+.container1 {
+  width: 100%;
+  height: 40px;
+  background-image: url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' width='320'>\
+  <text x='0' y='25'>WE ARE A DIGITAL DESIGN STUDIO</text>\
+</svg>\
+");
+  background-repeat: repeat;
+  background-size: auto;
+  animation: 20s linear infinite slide2;
+}
+
+.container2 {
+  width: 100%;
+  height: 60px;
+  background-image: url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' width='145'>\
+  <text x='0' y='36'>COMING SOON</text>\
+</svg>\
+");
+  background-repeat: repeat;
+  background-size: auto;
+  animation: 8s linear infinite slide1;
+}
+
+.container3 {
+  width: 100%;
+  height: 40px;
+  background-image: url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' width='320'>\
+  <text x='0' y='25'>WE ARE A DIGITAL DESIGN STUDIO</text>\
+</svg>\
+");
+  background-repeat: repeat;
+  background-size: auto;
+  animation: 10s linear infinite slide1;
+}
+
+.child1 {
+  overflow: hidden;
+  position: relative;
+  font-family: asul, san-serif;
+  font-weight: regular;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  -ms-transform: rotate(270deg); /* IE 9 */
+  -webkit-transform: rotate(270deg); /* Safari */
+  transform: rotate(270deg);
+  margin: 20vh 0 0 -43.5vw;
+  overflow-y: hidden;
+  background-color:#8000FF;
+  width: 100vw;
+}
+
+.child2 {
+  overflow: hidden;
+  position: relative;
+  font-family: asul, san-serif;
+  font-weight: regular;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  -ms-transform: rotate(270deg); /* IE 9 */
+  -webkit-transform: rotate(270deg); /* Safari */
+  transform: rotate(270deg);
+  margin: 20vh 0 0 -47.55vw;
+  overflow-y: hidden;
+  background-color:#8000FF;
+  width: 100vw;
+}
+
+.child3 {
+  overflow: hidden;
+  position: relative;
+  font-family: asul, san-serif;
+  font-weight: regular;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  -ms-transform: rotate(270deg); /* IE 9 */
+  -webkit-transform: rotate(270deg); /* Safari */
+  transform: rotate(270deg);
+  margin: 20vh 0 0 48.5vw;
+  overflow-y: hidden;
+  background-color:#8000FF;
+  width: 100vw;
+}
+
+.container1,.container2,.container3 {
+  border: 1px solid #000;
+}
+
+.locator {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  overflow:hidden;
 }
 /********************* end marquee **********************/
