@@ -92,7 +92,7 @@ Star.prototype = {
       this.alpha += .01;
       this.x += this.speed * cos(angle);
       this.y += this.speed * sin(angle);
-      this.speed += 0.0075;
+      this.speed += .5;
     }
   },
   reset(){
