@@ -51,46 +51,18 @@ table {
 @import url('https://fonts.googleapis.com/css?family=Asul:400,700');
 
 html, body {
-  background-color: #8000FF;
-  font-family: 'Asul', sans-serif;
+  background-image: linear-gradient(#342F2F, black);
+  font-family: "cannon", sans-serif;
   color: #000000;
   width: 100vw;
   height: 100vh;
+	margin:0;
+	padding:0;
 }
 
-.background1 {
-  background-image: url("content/background_type.svg");
-  background-size: 100%;
-  height: 100vh;
-  width: 100vw;
-  text-align:center;
-  float:center;
-  vertical-align: middle;
-}
-
-.background2 {
-  background-image: linear-gradient(45deg, rgba(128,0,255,0), rgba(128,0,255,1));
-  height: 100vh;
-  width: 100vw;
-  text-align:center;
-  float:center;
-  vertical-align: middle;
-}
-
-.background3 {
-  text-align:center;
-  float:center;
-  vertical-align: middle;
-}
-
-.background3-octopus {
-  width: 33.1%;
-}
-
-.octopus {
-  width: 23.75%;
-  mix-blend-mode: difference;
-  margin-top: 12.5%;
+circle {
+  fill: none;
+  stroke-width: 1.5px;
 }
 
 .logo-hero {
@@ -103,32 +75,41 @@ html, body {
   position: absolute;
 }
 
+.side-position {
+	width: 100vw;
+  text-align: left;
+  vertical-align: top;
+  margin: 22.5% 0 0 1%;
+  z-index: 0;
+  position: fixed;
+}
+
 .design {
   float:center;
   vertical-align:middle;
-  margin: 30.75% 0 0 63.75%;
+  margin: 17% 0 0 74%;
   z-index: 2;
   position: absolute;
   width: 15%;
   color: #000;
   text-align: center;
-  font-family: futura, san-serif;
-  font-weight: bold;
+  font-family: "cannon", san-serif;
+	text-transform: uppercase;
+	text-size: 14;
+  font-weight: "black";
 }
 
-.circle {
+.circle2 {
   position: relative;
   display: block;
   margin: 0;
   background-color: transparent;
   text-align: center;
-  font-family: futura, san-serif;
-  font-weight: bold;
   font-size: 3px;
 
 }
 
-.circle:after {
+.circle2:after {
   display: block;
   padding-bottom: 27%;
   width: 27%;
@@ -138,7 +119,7 @@ html, body {
   content: "";
 }
 
-.circle__inner {
+.circle2__inner {
   position: absolute;
   vertical-align: middle;
   top: 35%;
@@ -148,208 +129,59 @@ html, body {
   height: 100%;
 }
 
-.circle__wrapper {
+.circle2__wrapper {
   display: table;
   width: 27%;
   height: 27%;
 }
 
-.circle__content {
+.circle2__content {
   display: table-cell;
   vertical-align: middle;
   float: center;
 }
 
 @media (min-width: 480px) {
-  .circle__content {
+  .circle2__content {
     font-size: 2em;
   }
 }
 
 @media (min-width: 768px) {
-  .circle__content {
+  .circle2__content {
     font-size: 4em;
   }
 }
-
 /********************* begin marquee **********************/
-/*.wrapper {
-    -ms-transform: rotate(270deg); /* IE 9
-  -webkit-transform: rotate(270deg); /* Safari
-  transform: rotate(270deg);
-  position: absolute;
-  z-index: 0;
-  float: left;
-  margin: 5% 0 0 0;
-  width: 5%;
-}
 
-.marquee {
-  height: 5vw;
-  width: 100vh;
-  margin: 0;
-
-  overflow: hidden;
-  position: relative;
-
-  font-family: asul, san-serif;
-  font-weight: regular;
-  font-size: 1.25em;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-
-  border: 2px solid #000;
-  vertical-align:middle;
-}
-
-.marquee div {
-  display: block;
-  width: 300%;
-  height: 5vw;
-
-  position: absolute;
-  overflow: hidden;
-
-  animation: marquee 5s linear infinite;
-}
-
-.marquee span {
-  float: left;
-  width: 50%;
-  vertical-align:middle;
-  float:center;
-  margin-top: 1.2%;
-}
-
-@keyframes marquee {
-  0% { left: 0; }
-  100% { left: -100%; }
-}
-/********************* end marquee **********************/
-
-/********************* begin marquee **********************/
-@keyframes slide1 {
-  from {
-    background-position-x: 0;
-  }
-  to {
-    background-position-x: -100%;
-  }
-}
-
-@keyframes slide2 {
-  from {
-    background-position-x: -100%;
-  }
-  to {
-    background-position-x: 0;
-  }
-}
-
-.container1 {
-  width: 100%;
-  height: 40px;
-  background-image: url("data:image/svg+xml;utf8,\
-<svg xmlns='http://www.w3.org/2000/svg' width='320'>\
-  <text x='0' y='25'>WE ARE A DIGITAL DESIGN STUDIO</text>\
-</svg>\
-");
-  background-repeat: repeat;
-  background-size: auto;
-  animation: 20s linear infinite slide2;
+.container3 {
+	width: 100%;
+	text-size: 10;
+	text-transform: uppercase;
+	color: #FFB800;
+	justify-content: center;
+	text-align: center;
+	float: center;
+	vertical-align: bottom;
+	margin: 97vh 0 0 0;
+	position: absolute;
+	font-weight: "black";
+	font-family: "cannon";
 }
 
 .container2 {
-  width: 100%;
   height: 60px;
-  background-image: url("data:image/svg+xml;utf8,\
-<svg xmlns='http://www.w3.org/2000/svg' width='145'>\
-  <text x='0' y='36'>COMING SOON</text>\
-</svg>\
-");
-  background-repeat: repeat;
-  background-size: auto;
-  animation: 8s linear infinite slide1;
-}
-
-.container3 {
-  width: 100%;
-  height: 40px;
-  background-image: url("data:image/svg+xml;utf8,\
-<svg xmlns='http://www.w3.org/2000/svg' width='320'>\
-  <text x='0' y='25'>WE ARE A DIGITAL DESIGN STUDIO</text>\
-</svg>\
-");
-  background-repeat: repeat;
-  background-size: auto;
-  animation: 10s linear infinite slide1;
-}
-
-.container1:hover,.container2:hover,.container3:hover {
- -moz-animation-play-state: paused;
- -webkit-animation-play-state: paused;
- animation-play-state: paused;
- }
-
-.child1 {
-  overflow: hidden;
-  position: relative;
-  font-family: asul, san-serif;
-  font-weight: regular;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  -ms-transform: rotate(270deg); /* IE 9 */
-  -webkit-transform: rotate(270deg); /* Safari */
-  transform: rotate(270deg);
-  margin: 20vh 0 0 -43.5vw;
-  overflow-y: hidden;
-  background-color:#8000FF;
-  width: 100vw;
-}
-
-.child2 {
-  overflow: hidden;
-  position: relative;
-  font-family: asul, san-serif;
-  font-weight: regular;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  -ms-transform: rotate(270deg); /* IE 9 */
-  -webkit-transform: rotate(270deg); /* Safari */
-  transform: rotate(270deg);
-  margin: 20vh 0 0 -47.55vw;
-  overflow-y: hidden;
-  background-color:#8000FF;
-  width: 100vw;
-}
-
-.child3 {
-  overflow: hidden;
-  position: relative;
-  font-family: asul, san-serif;
-  font-weight: regular;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  -ms-transform: rotate(270deg); /* IE 9 */
-  -webkit-transform: rotate(270deg); /* Safari */
-  transform: rotate(270deg);
-  margin: 20vh 0 0 48.5vw;
-  overflow-y: hidden;
-  background-color:#8000FF;
-  width: 100vw;
-}
-
-.container1,.container2,.container3 {
-  border: 1px solid #000;
-}
-
-.locator {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100vw;
-  height: 100vh;
-  z-index: 1;
-  overflow:hidden;
+	overflow: hidden;
+	position: relative;
+	font-family: "cannon", san-serif;
+	font-weight: "black";
+	text-transform: uppercase;
+	color: #FFB800;
+	text-size: 10;
+	letter-spacing: .1em;
+	-ms-transform: rotate(270deg); /* IE 9 */
+	-webkit-transform: rotate(270deg); /* Safari */
+	transform: rotate(270deg);
+	overflow-y: hidden;
 }
 /********************* end marquee **********************/
