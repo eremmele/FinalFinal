@@ -1,3 +1,8 @@
+jQuery(document).ready(function(){
+    function resizeForm(){
+        var width = (window.innerWidth > 0) ? window.innerWidth : document.documentElement.clientWidth;
+        if(width > 768){
+
 window.requestAnimFrame = (function(){
   return  window.requestAnimationFrame   ||
       window.webkitRequestAnimationFrame ||
@@ -155,3 +160,11 @@ function setup(){
 }
 // Fire it up.
 setup();
+
+} else {
+
+        }
+    }
+    window.onresize = resizeForm;
+    resizeForm();
+});
