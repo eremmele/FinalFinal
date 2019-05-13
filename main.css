@@ -49,7 +49,7 @@ table {
 /********************* BEGIN MAIN CSS **********************/
 
 @font-face {
-    font-family: 'Cannon';
+    font-family: 'Cannon', sans-serif;
     src: url('fonts/Cannon-SCblack.otf') format('opentype'), url('fonts/Cannon-SCbook.otf') format('opentype'),
 		url('fonts/Cannon-SCblack.ttf') format('truetype'), url('fonts/Cannon-SCbook.ttf') format('truetype');
     font-weight: normal;
@@ -139,10 +139,9 @@ circle {
   width: 15%;
   color: #000;
   text-align: center;
-  font-family: "cannon", san-serif;
+  font-family: "cannon-scblack", san-serif;
 	text-transform: uppercase;
 	text-size: 14;
-  font-weight: "black";
 }
 
 .circle2 {
@@ -211,15 +210,13 @@ circle {
 	vertical-align: bottom;
 	margin: 97vh 0 0 0;
 	position: absolute;
-	font-weight: "black";
-	font-family: "cannon";
+	font-family: "cannon-scblack";
 }
 
 .container2 {
   height: 60px;
 	position: relative;
-	font-family: "cannon", san-serif;
-	font-weight: "black";
+	font-family: "cannon-scblack", san-serif;
 	text-transform: uppercase;
 	color: #FFB800;
 	text-size: 10;
